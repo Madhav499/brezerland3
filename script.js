@@ -7,19 +7,30 @@ const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-rig
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 let activeTestimonial = 0;
 
-window.addEventListener('load', () => {
+function initAnimationsAndHeader() {
   setTimeout(() => {
     loader.classList.add('hidden');
-  }, 1800);
+  }, 1200);
   setTimeout(() => {
     reveals.forEach((el, index) => {
       setTimeout(() => el.classList.add('reveal-visible'), 150 + index * 60);
     });
-  }, 900);
+  }, 600);
   setInterval(() => {
     slideTestimonials();
   }, 6500);
   // ensure topbar and mobile menu behavior is correct on load
+  updateTopbarForViewport();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // run early so the header padding is applied before paint on mobile
+  updateTopbarForViewport();
+  initAnimationsAndHeader();
+});
+
+window.addEventListener('load', () => {
+  // re-evaluate after all resources are loaded in case layout changed
   updateTopbarForViewport();
 });
 
@@ -58,8 +69,9 @@ function updateTopbarForViewport() {
   const mobileBreakpoint = 820;
   if (window.innerWidth <= mobileBreakpoint) {
     topbar.classList.add('mobile-fixed');
-    // set body padding equal to topbar height so content isn't hidden
+    // compute actual height and set CSS variable so CSS placement matches
     const h = topbar.offsetHeight || parseInt(getComputedStyle(document.documentElement).getPropertyValue('--topbar-height')) || 84;
+    document.documentElement.style.setProperty('--topbar-height', h + 'px');
     document.body.style.paddingTop = h + 'px';
   } else {
     topbar.classList.remove('mobile-fixed');

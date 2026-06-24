@@ -1,5 +1,6 @@
 :root {
   --purple: #723881;
+  --topbar-height: 84px;
   --indigo: #241663;
   --lavender: #b89cc4;
   --ivory: #f7f5f5;
@@ -850,18 +851,34 @@ textarea {
   .topbar-inner {
     flex-wrap: wrap;
   }
-  .navbar {
+  /* Fixed topbar on mobile to keep navigation visible */
+  .topbar {
     position: fixed;
-    top: 84px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1200;
+    padding: 10px 0;
+    height: var(--topbar-height);
+  }
+
+  /* fallback spacing for content; JS will manage this on resize/load */
+  body {
+    padding-top: var(--topbar-height);
+  }
+
+  .navbar {
+    position: absolute;
+    top: var(--topbar-height);
     left: 0;
     right: 0;
     background: rgba(17,7,33,0.98);
     flex-direction: column;
     gap: 10px;
-    padding: 18px 24px;
+    padding: 18px 20px;
     transform: translateY(-120%);
-    transition: transform 0.3s ease;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: transform 0.28s cubic-bezier(.2,.9,.2,1), opacity 0.28s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
 
   .navbar.open {

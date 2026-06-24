@@ -19,6 +19,8 @@ window.addEventListener('load', () => {
   setInterval(() => {
     slideTestimonials();
   }, 6500);
+  // ensure topbar and mobile menu behavior is correct on load
+  updateTopbarForViewport();
 });
 
 window.addEventListener('scroll', () => {
@@ -33,12 +35,47 @@ window.addEventListener('scroll', () => {
 menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('open');
   menuToggle.classList.toggle('open');
+  const open = navbar.classList.contains('open');
+  menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  // prevent background scrolling when mobile menu is open
+  document.documentElement.style.overflow = open ? 'hidden' : '';
+  document.body.style.overflow = open ? 'hidden' : '';
 });
 
 document.querySelectorAll('.navbar a').forEach((link) => {
   link.addEventListener('click', () => {
     navbar.classList.remove('open');
+    menuToggle.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
   });
+});
+
+// Keep header fixed on small screens and adjust body padding so content doesn't hide
+function updateTopbarForViewport() {
+  if (!topbar) return;
+  const mobileBreakpoint = 820;
+  if (window.innerWidth <= mobileBreakpoint) {
+    topbar.classList.add('mobile-fixed');
+    // set body padding equal to topbar height so content isn't hidden
+    const h = topbar.offsetHeight || parseInt(getComputedStyle(document.documentElement).getPropertyValue('--topbar-height')) || 84;
+    document.body.style.paddingTop = h + 'px';
+  } else {
+    topbar.classList.remove('mobile-fixed');
+    document.body.style.paddingTop = '';
+    // ensure nav is closed when switching to desktop
+    if (navbar.classList.contains('open')) {
+      navbar.classList.remove('open');
+      menuToggle.classList.remove('open');
+    }
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+  }
+}
+
+window.addEventListener('resize', () => {
+  updateTopbarForViewport();
 });
 
 function slideTestimonials() {

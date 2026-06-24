@@ -90,6 +90,16 @@ window.addEventListener('resize', () => {
   updateTopbarForViewport();
 });
 
+// run once immediately (covers cases where DOMContentLoaded already occurred)
+try {
+  updateTopbarForViewport();
+} catch (e) {
+  // ignore
+}
+
+// re-run shortly after to catch late layout shifts (fonts/images)
+setTimeout(() => updateTopbarForViewport(), 600);
+
 function slideTestimonials() {
   testimonialCards[activeTestimonial]?.classList.remove('active');
   activeTestimonial = (activeTestimonial + 1) % testimonialCards.length;

@@ -864,7 +864,7 @@ textarea {
 
   /* fallback spacing for content; JS will manage this on resize/load */
   body {
-    padding-top: var(--topbar-height);
+    padding-top: var(--topbar-height) !important;
   }
 
   .navbar {

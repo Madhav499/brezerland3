@@ -917,18 +917,17 @@ textarea {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  z-index: 1400;
+  z-index: 200;
   pointer-events: none;
 }
 .mobile-menu .mobile-menu-backdrop {
   position: absolute;
   inset: 0;
-  /* Use a semi-transparent deep purple overlay instead of heavy blur */
-  background: rgba(36,22,99,0.66); /* #241663 at ~66% */
-  /* keep a very subtle blur for depth only */
-  backdrop-filter: blur(2px) saturate(110%);
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(2px);
   opacity: 0;
-  transition: opacity 360ms ease;
+  transition: opacity 300ms ease-in-out;
   pointer-events: none;
 }
 .mobile-menu.open .mobile-menu-backdrop {
@@ -938,26 +937,23 @@ textarea {
 .mobile-menu-panel {
   position: absolute;
   top: 0;
-  right: -100%;
-  width: min(420px, 86%);
+  right: 0;
+  width: min(320px, 80vw);
   height: 100%;
-  /* Deep indigo base with purple gradient accent */
+  z-index: 200;
   background: linear-gradient(180deg, #723881 0%, #241663 100%);
   color: #fff;
-  /* soft, luxury shadow and slight border glow */
-  box-shadow: -8px 18px 48px rgba(36,22,99,0.56), -28px 0 80px rgba(0,0,0,0.45);
-  border-left: 1px solid rgba(114,56,129,0.12);
-  /* very subtle glass effect only (max 2-3px) */
+  box-shadow: -8px 18px 48px rgba(36, 22, 99, 0.56), -28px 0 80px rgba(0, 0, 0, 0.45);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(2px) saturate(110%);
-  /* smooth slide + fade timing */
-  transition: transform 360ms cubic-bezier(.2,.9,.2,1), box-shadow 360ms ease, background 360ms ease;
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease, background 300ms ease;
   pointer-events: auto;
   padding: calc(var(--topbar-height) + 20px) 20px 40px;
   border-radius: 8px 0 0 8px;
+  transform: translateX(100%);
 }
 .mobile-menu.open .mobile-menu-panel {
-  transform: translateX(-100%);
-  right: 0;
+  transform: translateX(0);
 }
 .mobile-close {
   position: absolute;

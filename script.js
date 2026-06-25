@@ -109,6 +109,16 @@ function closeMobileMenu() {
 if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
 if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
 
+const sectionLinks = document.querySelectorAll('.navbar a, .mobile-nav a');
+function updateActiveNavLinks(activeId) {
+  sectionLinks.forEach((link) => {
+    const targetId = link.getAttribute('href');
+    link.classList.toggle('active', targetId === `#${activeId}`);
+  });
+}
+
+if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
+
 // close on escape
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeMobileMenu();
@@ -120,6 +130,20 @@ window.addEventListener('resize', () => {
     closeMobileMenu();
   }
 });
+
+// update active section state while scrolling
+const observedSections = document.querySelectorAll('main section[id]');
+if (observedSections.length) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible) {
+      updateActiveNavLinks(visible.target.id);
+    }
+  }, { threshold: 0.35, rootMargin: '-25% 0px -50% 0px' });
+  observedSections.forEach((section) => sectionObserver.observe(section));
+}
 
 // Keep header fixed on small screens and adjust body padding so content doesn't hide
 function updateTopbarForViewport() {
@@ -179,10 +203,24 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 anchors.forEach((anchor) => {
   anchor.addEventListener('click', (event) => {
     const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!target) return;
+    event.preventDefault();
+    const isMobileNavLink = anchor.closest('.mobile-nav');
+    const isDesktopNavLink = anchor.closest('.navbar');
+    const scrollToTarget = () => target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    if (isMobileNavLink) {
+      closeMobileMenu();
+      setTimeout(scrollToTarget, 300);
+      return;
     }
+
+    if (isDesktopNavLink && navbar.classList.contains('open')) {
+      navbar.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+    scrollToTarget();
   });
 });
 

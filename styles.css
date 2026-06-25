@@ -151,7 +151,9 @@ textarea {
 }
 
 .brand img {
-  width: 42px;
+  width: auto;
+  height: 48px;
+  max-height: 50px;
 }
 
 .brand span {
@@ -164,6 +166,12 @@ textarea {
   display: flex;
   align-items: center;
   gap: 28px;
+}
+
+/* Hide desktop nav on smaller viewports - mobile will use slide-in drawer */
+@media (max-width: 1024px) {
+  .navbar { display: none; }
+  .btn-ghost { display: none; }
 }
 
 .navbar a {
@@ -903,6 +911,85 @@ textarea {
   .form-grid .full {
     grid-column: span 1;
   }
+}
+
+/* Mobile slide-in menu styles */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
+  pointer-events: none;
+}
+.mobile-menu .mobile-menu-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(3,2,6,0.55);
+  backdrop-filter: blur(6px) saturate(120%);
+  opacity: 0;
+  transition: opacity 320ms ease;
+  pointer-events: none;
+}
+.mobile-menu.open .mobile-menu-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-panel {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: min(420px, 86%);
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36,22,99,0.96), rgba(36,22,99,0.94));
+  color: #fff;
+  box-shadow: -28px 0 80px rgba(0,0,0,0.45);
+  border-left: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px) saturate(120%);
+  transition: transform 360ms cubic-bezier(.2,.9,.2,1);
+  pointer-events: auto;
+  padding: calc(var(--topbar-height) + 20px) 20px 40px;
+}
+.mobile-menu.open .mobile-menu-panel {
+  transform: translateX(-100%);
+  right: 0;
+}
+.mobile-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+}
+.mobile-nav ul {
+  list-style: none;
+  margin: 24px 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.mobile-nav a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.05rem;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  opacity: 0;
+  transform: translateX(8px);
+}
+.mobile-menu.open .mobile-nav a { opacity: 1; transform: none; transition: transform 360ms cubic-bezier(.2,.9,.2,1), opacity 360ms ease; }
+.mobile-ctas { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; }
+.mobile-ctas .btn { width: 100%; }
+
+/* Ensure logo doesn't crop and is centered */
+.topbar .brand { align-items: center; }
+.brand img { display: block; }
+
+/* ensure safe area spacing for mobile */
+@media (max-width: 420px) {
+  .mobile-menu-panel { padding-left: 16px; padding-right: 16px; }
 }
 
 @media (max-width: 620px) {

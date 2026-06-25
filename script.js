@@ -2,6 +2,9 @@ const loader = document.getElementById('pageLoader');
 const topbar = document.getElementById('topbar');
 const navbar = document.getElementById('navbar');
 const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+const mobileBackdrop = document.getElementById('mobileBackdrop');
 const progressBar = document.querySelector('.progress-bar');
 const reveals = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale');
 const testimonialCards = document.querySelectorAll('.testimonial-card');
@@ -44,11 +47,16 @@ window.addEventListener('scroll', () => {
 });
 
 menuToggle.addEventListener('click', () => {
+  // On mobile, open the slide-in mobile menu; on desktop keep old behaviour
+  const isMobile = window.innerWidth <= 1024;
+  if (isMobile && mobileMenu) {
+    openMobileMenu();
+    return;
+  }
   navbar.classList.toggle('open');
   menuToggle.classList.toggle('open');
   const open = navbar.classList.contains('open');
   menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  // prevent background scrolling when mobile menu is open
   document.documentElement.style.overflow = open ? 'hidden' : '';
   document.body.style.overflow = open ? 'hidden' : '';
 });
@@ -61,6 +69,56 @@ document.querySelectorAll('.navbar a').forEach((link) => {
     document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
   });
+});
+
+// Mobile menu functions
+function openMobileMenu() {
+  if (!mobileMenu) return;
+  mobileMenu.classList.add('open');
+  mobileMenu.setAttribute('aria-hidden', 'false');
+  menuToggle.classList.add('open');
+  menuToggle.setAttribute('aria-expanded', 'true');
+  // lock scrolling
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+  // staggered reveal for items
+  const items = mobileMenu.querySelectorAll('.mobile-nav a');
+  items.forEach((it, i) => {
+    it.style.transitionDelay = `${80 + i * 60}ms`;
+    it.style.opacity = '1';
+    it.style.transform = 'none';
+  });
+}
+
+function closeMobileMenu() {
+  if (!mobileMenu) return;
+  mobileMenu.classList.remove('open');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+  const items = mobileMenu.querySelectorAll('.mobile-nav a');
+  items.forEach((it) => {
+    it.style.transitionDelay = '';
+    it.style.opacity = '';
+    it.style.transform = '';
+  });
+}
+
+if (mobileClose) mobileClose.addEventListener('click', closeMobileMenu);
+if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileMenu);
+
+// close on escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMobileMenu();
+});
+
+// ensure in-case of window resize we close the mobile menu when switching to desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1024 && mobileMenu && mobileMenu.classList.contains('open')) {
+    closeMobileMenu();
+  }
 });
 
 // Keep header fixed on small screens and adjust body padding so content doesn't hide

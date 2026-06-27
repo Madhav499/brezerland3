@@ -1,0 +1,594 @@
+--- PAGE 1 ---
+BREEZERLAND
+ Manufacturer & Exporter of Fragrance Compounds,
+ Perfumes & Aromatic Products
+ 
+ Rajkot, Gujarat, India · Est. 2020
+ 
+ Website Content & SEO Strategy Document
+ 
+ Ready for Developer Handoff · All Pages Included · SEO Meta Tags Included
+ 
+■  Gondal Road, Rajkot – 360311, Gujarat
+■  +91-8047672314
+■  Parth Patadiya
+This document contains complete, SEO-optimised website copy for Breezerland — structured
+page-by-page for developer handoff. Includes meta tags, H1/H2 headings, body content, CTAs,
+ keyword strategy, and contact form specification.
+ 
+ TABLE OF CONTENTS
+ 
+01
+Homepage — Hero, Overview & Products Grid
+02
+About Us — Story, Mission, Values & Factsheet
+03
+Products & Services — 7 Full Category Descriptions
+04
+Why Choose Breezerland — 7 Differentiators
+
+
+--- PAGE 2 ---
+05
+How We Work — 5-Step Process
+06
+Testimonials / Social Proof — Sample Content
+07
+Contact Us — Full Details + Form Specification
+08
+SEO Keywords Master List — 30+ Keywords
+09
+Meta Tags Summary — All Pages, Copy-Paste Ready
+
+
+--- PAGE 3 ---
+PAGE 01
+HOMEPAGE
+URL: / | Priority: Highest | Purpose: First impression, primary SEO anchor
+● SEO META TAGS
+Title Tag: Breezerland – Fragrance Compound Manufacturer & Perfume Exporter | Rajkot, Gujarat
+Meta Description: Breezerland manufactures and exports fragrance compounds, perfume compounds, attars,
+air fresheners and fine fragrances from Rajkot, Gujarat. Custom B2B solutions available.
+Focus Keywords: fragrance compound manufacturer India, perfume compound supplier Gujarat, bulk
+perfume manufacturer Rajkot, attar manufacturer India
+HERO SECTION
+H1 Headline:
+Crafting Signature Scents — India's Trusted Fragrance
+Compound Manufacturer
+Sub-Headline:
+From raw perfumery compounds to ready-to-launch perfume brands — Breezerland delivers
+complete fragrance solutions for manufacturers, cosmetic brands, retailers, and exporters across
+India and beyond. Based in Rajkot, Gujarat.
+ ■ Request a Free Sample | Get a Bulk Quote | WhatsApp Us
+ 
+TRUST BADGES (below hero CTA)
+✦ Est. 2020
+✦ B2B Specialist
+✦ PAN India Supply
+✦ Export Ready
+✦ Custom Formulations
+WHO WE ARE (H2 Section)
+Breezerland is a Rajkot-based manufacturer and exporter of premium fragrance compounds,
+perfume compounds, fine fragrances, attars, and aromatic products. Since our establishment in
+2020, we have built a strong reputation for delivering consistent, high-quality fragrance solutions
+tailored to the needs of cosmetic brands, personal care manufacturers, detergent producers, and
+corporate gifting businesses.
+Whether you need a ready-to-bottle spray perfume, a custom-blended raw material compound, or
+end-to-end support for launching your own perfume brand — Breezerland is your one-stop
+fragrance manufacturing partner.
+
+
+--- PAGE 4 ---
+■ Explore Our Products → | Learn About Us →
+ 
+PRODUCT HIGHLIGHTS GRID (6 Cards on Homepage)
+■  Fragrance Compounds
+■  Perfume Sprays
+■  Air Fresheners
+■  Attars & Perfume Oils
+■  Household Fragrances
+■  Corporate Gift Perfumes
+
+
+--- PAGE 5 ---
+PAGE 02
+ABOUT US
+URL: /about-us | Purpose: Build trust, tell brand story, communicate values
+● SEO META TAGS
+Title Tag: About Breezerland | Fragrance Manufacturer in Rajkot, Gujarat, India
+Meta Description: Learn about Breezerland — manufacturer and exporter of fragrance compounds and
+perfumes in Rajkot, Gujarat. Custom fragrance solutions, private label perfumes, and B2B supply since 2020.
+Focus Keywords: about Breezerland, fragrance manufacturer Rajkot, perfume compound exporter Gujarat,
+custom fragrance India
+H1 — About Breezerland: Your Trusted Fragrance
+Partner
+Founded in 2020, Breezerland has rapidly established itself as one of Rajkot's most trusted names
+in fragrance compound manufacturing and export. Operating from our facility in Gondal Road,
+Rajkot, Gujarat, we specialise in manufacturing fragrance compounds, perfume compounds, fine
+fragrances, attars, and a wide range of aromatic products for industrial and consumer use.
+H2 — Our Story
+Breezerland was founded with a clear vision: to give businesses across India access to a reliable,
+quality-focused fragrance compound supplier who understands both the art of perfumery and the
+practicalities of B2B supply. Our founder, Parth Patadiya, combined technical expertise in
+fragrance chemistry with deep market knowledge to create a company that delivers real results for
+its clients.
+Today, we serve manufacturers across personal care, household products, cosmetics, air care,
+and corporate gifting — providing compounds and finished fragrances that meet industry standards
+and consistently delight end consumers.
+H2 — Our Mission
+To make premium-quality fragrance compounds and perfume solutions accessible to every
+business — from startups launching their first scent line to established FMCG brands seeking a
+reliable bulk fragrance supplier.
+H2 — Our Core Values
+Quality First
+Integrity
+Innovation
+Client Focus
+Rigorous quality checks on every batch for consistent, safe compounds.
+Transparent pricing, honest timelines, no compromises on ingredients.
+Continuous development of new fragrance profiles and formulations.
+Your requirements drive everything — we listen, then we formulate.
+
+
+--- PAGE 6 ---
+H2 — Company Factsheet
+Year of Establishment
+2020
+Nature of Business
+Manufacturer & Exporter
+Specialisation
+Fragrance Compounds, Perfume Compounds, Fine Fragrances, Attars, Aromatic Products
+Registered Address
+Silver Complex, 1st Floor, Shop No-8, Gundala Road, Gondal, Rajkot – 360311, Gujarat, India
+Team Size
+Up to 10 Skilled Professionals
+Business Model
+B2B | OEM | Private Label | Bulk Supply | Formulation Consulting
+Industries Served
+Personal Care, Cosmetics, Household Products, Air Care, Corporate Gifting, FMCG
+Contact Person
+Parth Patadiya
+Phone / WhatsApp
++91-8047672314
+IndiaMart Profile
+www.indiamart.com/breezerland
+ExportersIndia Profile
+www.exportersindia.com/breezerland
+
+
+--- PAGE 7 ---
+PAGE 03
+PRODUCTS & SERVICES
+URL: /products | Priority: Very High | Purpose: Core commercial page — drives leads
+● SEO META TAGS
+Title Tag: Fragrance Compounds, Perfume Sprays, Attars & More | Breezerland, Rajkot
+Meta Description: Explore Breezerland's complete product range: fragrance compounds, spray perfumes,
+attars, air fresheners, essential oils, household fragrances, and corporate gifting perfumes. Bulk B2B supply
+from Rajkot, Gujarat.
+Focus Keywords: fragrance compound supplier India, perfume spray manufacturer, attar supplier Rajkot, air
+freshener manufacturer Gujarat, corporate gift perfume, bulk perfume oil
+H1 — Our Complete Product & Service Range
+At Breezerland, we offer a comprehensive portfolio of fragrance products — from industrial-grade
+raw perfumery compounds to beautifully packaged consumer perfumes and corporate gifting
+collections. Every product is manufactured with precision, using carefully sourced ingredients and
+rigorously tested fragrance formulations.
+01. FRAGRANCE PERFUMES
+Consumer & B2B spray perfumes
+High-quality, long-lasting spray perfumes available in multiple sizes, ideal for personal use, retail,
+private labelling, and gifting. Available in bulk for distributors and brand owners.
+ 60ml Spray Perfume
+ Maximus Perfume Fragrance (range)
+ Maximus Essential Perfume
+ Cosmetic Fragrance Perfume
+ 20ml Pocket Perfume Spray Bottle
+02. PERFUMERY COMPOUNDS — RAW
+MATERIALS
+For manufacturers & blenders
+High-concentration fragrance compounds designed for manufacturers who blend their own
+formulations into soaps, shampoos, cosmetics, detergents, or consumer perfumes. Available in
+various grades.
+
+
+--- PAGE 8 ---
+ Raw Material For Perfumery
+ Maximus Perfume Compounds
+ Maximus Perfume Compound (multi-grade)
+ Perfume Premix
+ Perfume Mix Solvent
+03. PERFUME FRAGRANCE — SPECIALTY
+PRODUCTS
+Hair, room & personal care
+Specialty fragrance products crafted for specific personal care and home applications. Formulated for
+compatibility with carrier oils, room sprays, and roll-on formats.
+ Hair Oil Fragrance
+ Room Fragrance
+ Roll On Perfume
+ Imported Perfume Oils
+ Attar Bottle (traditional & modern)
+04. AIR FRESHENERS & HOME FRAGRANCES
+Homes, hotels, offices & vehicles
+Aromatic solutions designed to freshen and scent indoor environments. Available for retail packaging
+and bulk industrial supply.
+ Toilet Freshener
+ Car Fragrance
+ Air Diffuser
+ Attar (traditional room fragrance)
+05. HOUSEHOLD & PERSONAL CARE
+FRAGRANCES
+Soaps, detergents & dishwash
+Specially engineered fragrance compounds compatible with alkaline bases used in soaps,
+detergents, and dishwash products. Provides long-lasting scent through washing cycles.
+ Dish Wash Fragrance
+ Soaps & Detergent Fragrance Compound
+ Soap Fragrance Compound
+ Maximus Essential Oils
+06. CORPORATE & GIFTING PERFUMES
+Events, brands & bulk gifting
+
+
+--- PAGE 9 ---
+Premium packaged perfumes designed for corporate gifting, festive collections, product launches,
+and promotional campaigns. Custom branding options available.
+ Corporate Gifting Perfumes
+ Attar Gift Sets
+ Custom Branded Spray Bottles
+ Pocket Perfume Gift Packs
+ Imported Perfume Oil Gift Sets
+07. CONSULTING & BRAND DEVELOPMENT
+Launch your own perfume brand
+End-to-end support for entrepreneurs and businesses building their fragrance brand from scratch. We
+handle formulation, testing, packaging guidance, and private label production.
+ Perfume Spray Formulation Consulting
+ Perfume Brand Development
+ Custom Scent Creation & Testing
+ Private Label Perfume Manufacturing
+ Packaging & Bottling Guidance
+■ Request Product Catalogue | Get a Bulk Quote | WhatsApp: +91-8047672314
+
+
+--- PAGE 10 ---
+PAGE 04
+WHY CHOOSE BREEZERLAND
+URL: /why-us | Purpose: Differentiation, reduce hesitation, convert buyers
+● SEO META TAGS
+Title Tag: Why Choose Breezerland | Reliable Fragrance Manufacturer India
+Meta Description: Discover why businesses across India choose Breezerland for fragrance compounds,
+perfume manufacturing, and custom aromatic solutions. Quality, reliability, and competitive pricing from Rajkot,
+Gujarat.
+Focus Keywords: best fragrance manufacturer India, reliable perfume compound supplier, custom fragrance
+solutions Gujarat, B2B perfume supplier Rajkot
+H1 — Why Businesses Choose Breezerland
+In a competitive market, Breezerland stands apart through technical expertise, product
+consistency, and a genuine long-term partnership approach with every client.
+✦ Custom Formulation
+Capability
+We don't sell one-size-fits-all solutions. Our team works closely with
+you to develop bespoke fragrance profiles that match your product
+positioning — whether it's a mass-market soap or an ultra-premium
+luxury perfume collection.
+✦ Quality-Controlled
+Manufacturing
+Every batch of fragrance compounds and finished perfumes
+undergoes thorough internal quality checks before dispatch. We
+maintain consistent olfactory profiles, safe ingredient ratios, and
+stable shelf-life across all our products.
+✦ Wide Product Portfolio
+Under One Roof
+From raw perfumery compounds to consumer-ready sprays, attars,
+essential oils, air fresheners, and household fragrance compounds
+— we supply across 7+ fragrance categories from a single source,
+simplifying your procurement.
+✦ B2B & Export-Ready
+Operations
+We understand the demands of bulk buyers and export-oriented
+businesses. Our packaging, documentation, and logistics are
+structured to support smooth domestic deliveries and international
+export shipments.
+✦ Competitive Pricing —
+Direct Manufacturer
+As a direct manufacturer, we eliminate distributor markups. You
+receive competitive pricing on all fragrance compounds and
+perfumes without any compromise on ingredient quality or batch
+consistency.
+
+
+--- PAGE 11 ---
+✦ Fast Turnaround &
+Reliable Supply
+Operating from Rajkot — a key industrial hub in Gujarat — we supply
+clients across India efficiently, with quick sample dispatch, scalable
+production capacity, and reliable delivery timelines that keep your
+manufacturing on track.
+✦ Perfume Brand
+Development Support
+Beyond manufacturing, we actively assist new fragrance brands with
+formulation consulting, private labelling, and scent selection. We are
+not just your supplier — we are your partner in building a successful
+fragrance business.
+ ■ Get in Touch — Request a Sample or Quote Today
+ 
+
+--- PAGE 12 ---
+PAGE 05
+HOW WE WORK — OUR PROCESS
+URL: /how-we-work | Purpose: Educate buyers, reduce friction, build confidence
+● SEO META TAGS
+Title Tag: How Breezerland Works | Fragrance Manufacturing Process India
+Meta Description: Breezerland's simple 5-step fragrance manufacturing process — from your initial enquiry to
+final delivery. Custom fragrance solutions made easy for B2B buyers across India.
+Focus Keywords: fragrance manufacturing process India, custom perfume order process, bulk fragrance
+compound order Gujarat
+H1 — From Enquiry to Delivery: Our 5-Step Process
+Getting the right fragrance solution should be simple. Here is exactly how we work with clients —
+from your first message to the final shipment arriving at your door.
+STEP 01
+Share Your Requirements
+Tell us about your product — whether it's a soap fragrance compound, a spray
+perfume, an attar, or a private-label brand you want to launch. Share the quantity,
+target price range, and any specific fragrance notes, references, or application
+requirements you have in mind. WhatsApp or call us at +91-8047672314 to get started.
+STEP 02
+Sample Development
+Our in-house fragrance team develops a custom sample based on your brief. We focus
+on matching your desired scent profile while ensuring the compound is fully compatible
+with your intended product base — whether that's a soap, detergent, spray, oil, or
+cream.
+STEP 03
+Review & Refinement
+We dispatch fragrance samples for your evaluation. You share feedback — adjust the
+top notes, increase longevity, change the base intensity, or request a completely
+different direction. We refine iteratively until you are completely satisfied with the result.
+STEP 04
+Pricing & Order Confirmation
+Once your sample is approved, we provide a formal quotation with bulk pricing,
+minimum order quantity, packaging options, and production and delivery timelines. You
+confirm the order with an advance payment, and we schedule production.
+
+
+--- PAGE 13 ---
+STEP 05
+Production, Quality Check & Dispatch
+We manufacture your complete order under quality-controlled conditions. Before
+dispatch, every batch is checked for consistency, potency, and safety. We then
+package and ship securely — with documentation suited for both domestic delivery and
+export.
+ ■ Start Today — WhatsApp +91-8047672314 | Quick Reply Guaranteed
+ 
+
+--- PAGE 14 ---
+PAGE 06
+TESTIMONIALS / SOCIAL PROOF
+URL: /testimonials | Purpose: Convert hesitant buyers, build credibility
+● SEO META TAGS
+Title Tag: Breezerland Client Reviews | Trusted Fragrance Supplier India
+Meta Description: See what clients across India say about Breezerland's fragrance compounds, perfume
+manufacturing, and B2B service. Quality, reliability, and results our clients trust.
+Focus Keywords: Breezerland reviews, fragrance compound supplier reviews, perfume manufacturer India
+testimonials
+H1 — What Our Clients Say About Us
+We take pride in the lasting relationships we build with our clients. Below is sample content for the
+testimonials section. Replace with actual verified client reviews once collected. Consider adding a Google
+Review widget and IndiaMart ratings here.
+"Breezerland's soap fragrance compounds are consistently excellent — the
+scent strength is exactly what our product line needs, and their turnaround
+time is impressive. Highly recommended for any personal care
+manufacturer looking for a reliable compound supplier."
+★★★★★
+Soap & Detergent
+Manufacturer
+Rajkot, Gujarat
+"We launched our own perfume line with Breezerland's formulation
+consulting service. Parth and the team guided us from scent selection all
+the way to final packaging. They are a true brand development partner, not
+just a supplier."
+★★★★★
+Personal Care Brand
+Owner
+Ahmedabad, Gujarat
+"Ordered corporate gifting perfumes for a large company event. The quality
+and packaging were excellent — very premium feel. Delivery was on time
+and communication was smooth throughout. We will definitely work with
+Breezerland again."
+★★★★★
+Corporate Gifts
+Supplier
+Surat, Gujarat
+"We needed a reliable bulk fragrance compound supplier for our detergent
+range. Breezerland delivered consistent batches at competitive pricing with
+no quality issues. The compounds hold scent well through the wash cycle
+— exactly what we needed."
+★★★★★
+FMCG Manufacturer
+Mumbai, Maharashtra
+
+
+--- PAGE 15 ---
+Developer Note: Embed IndiaMart rating widget here. Also add a 'Leave a Review' CTA linking to the Google
+Business profile and IndiaMart listing.
+
+
+--- PAGE 16 ---
+PAGE 07
+CONTACT US
+URL: /contact | Purpose: Convert visitors to leads — most important conversion page
+● SEO META TAGS
+Title Tag: Contact Breezerland | Fragrance Manufacturer Rajkot | +91-8047672314
+Meta Description: Get in touch with Breezerland for bulk fragrance compounds, perfume manufacturing,
+custom formulations, and private label solutions. Call or WhatsApp +91-8047672314. Rajkot, Gujarat.
+Focus Keywords: contact Breezerland, fragrance manufacturer contact Rajkot, perfume compound enquiry
+Gujarat, bulk fragrance order
+H1 — Get in Touch With Breezerland
+Ready to place a bulk order, request a free sample, or explore our fragrance range? We respond to
+all enquiries within 24 hours. Reach us via phone, WhatsApp, or visit our facility in Rajkot, Gujarat.
+COMPANY NAME
+Breezerland
+CONTACT PERSON
+Parth Patadiya
+PHONE
++91-8047672314
+WHATSAPP
++91-8047672314  (Click to Chat)
+ADDRESS
+Silver Complex, 1st Floor, Shop No-8
+Gundala Road, Gondal
+Rajkot – 360311, Gujarat, India
+INDIAMART
+www.indiamart.com/breezerland
+EXPORTERS INDIA
+www.exportersindia.com/breezerland
+BUSINESS TYPE
+Manufacturer & Exporter | B2B | OEM | Private Label
+INDUSTRIES SERVED
+Personal Care · Cosmetics · Detergents · Air Care · Corporate Gifting
+WORKING HOURS
+Monday – Saturday: 9:00 AM – 7:00 PM (IST)
+RESPONSE TIME
+Within 24 hours for all enquiries
+SAMPLE DISPATCH
+Within 3–5 working days of enquiry confirmation
+H2 — Enquiry Form (Developer Specification)
+
+
+--- PAGE 17 ---
+Implement a contact form with the following fields:
+FIELD LABEL
+INPUT TYPE
+PLACEHOLDER / OPTIONS
+REQUIRED
+Full Name
+Text
+Your Full Name
+Yes
+Company / Brand
+Text
+Your Company or Brand Name
+No
+Phone / WhatsApp
+Tel
++91 XXXXXXXXXX
+Yes
+Email Address
+Email
+your@email.com
+Yes
+Product Interest
+Dropdown
+Fragrance Compound / Perfume / Attar / Air Freshener / Other
+Yes
+Quantity Required
+Text
+e.g. 50 kg, 500 bottles, 1000 units
+No
+Message
+Textarea
+Describe your fragrance requirement...
+No
+Submit CTA
+Button
+Send Enquiry  /  WhatsApp Us
+—
+
+
+--- PAGE 18 ---
+PAGE 08
+SEO KEYWORDS MASTER LIST
+Use across: page titles, H1/H2 headings, body copy, alt tags, URLs, meta descriptions
+PRIMARY KEYWORDS — Highest Priority
+fragrance compound manufacturer India · perfume compound supplier Gujarat · bulk fragrance
+compound Rajkot · perfume manufacturer Rajkot Gujarat · fine fragrance compound manufacturer ·
+attar manufacturer India · fragrance compound exporter India · perfume compound exporter Gujarat
+PRODUCT-SPECIFIC KEYWORDS
+60ml spray perfume manufacturer · pocket perfume spray 20ml India · hair oil fragrance supplier
+Gujarat · room fragrance manufacturer India · toilet freshener manufacturer Gujarat · car fragrance
+supplier India · air diffuser fragrance manufacturer · soap fragrance compound supplier · dish wash
+fragrance compound India · detergent fragrance manufacturer · essential oils supplier Rajkot ·
+imported perfume oils India · roll on perfume manufacturer Gujarat · attar bottle supplier India ·
+corporate gifting perfume supplier India · Maximus perfume compound
+SERVICE & INTENT KEYWORDS
+private label perfume manufacturer India · custom fragrance formulation India · OEM perfume
+manufacturer Gujarat · perfume brand development India · perfume spray formulation consultant ·
+bulk perfume order India · B2B fragrance supplier India · perfume premix supplier · custom attar
+manufacturer India · fragrance compound for soap manufacturer
+LOCAL & LONG-TAIL KEYWORDS
+fragrance compound manufacturer in Rajkot · perfume manufacturer in Gujarat India · buy fragrance
+compound Rajkot Gujarat · wholesale perfume supplier Rajkot · attar manufacturer near Rajkot ·
+fragrance exporter Gondal Road Rajkot · Breezerland Rajkot Gujarat · Parth Patadiya fragrance
+manufacturer Rajkot · perfume compound supplier near me Gujarat · cheap fragrance compound bulk
+order India
+
+
+--- PAGE 19 ---
+PAGE 09
+META TAGS — ALL PAGES (COPY-PASTE READY)
+Hand directly to developer or SEO implementer
+PAGE / URL
+TITLE TAG (≤60 chars)
+META DESCRIPTION (≤160 chars)
+Homepage /
+Breezerland – Fragrance
+Compound Manufacturer &
+Perfume Exporter | Rajkot,
+Gujarat
+Breezerland manufactures and exports fragrance
+compounds, perfume compounds, fine fragrances,
+attars, and air fresheners from Rajkot, Gujarat.
+Custom B2B fragrance solutions available.
+About Us
+/about-us
+About Breezerland | Fragrance
+Manufacturer Rajkot, Gujarat
+Learn about Breezerland — manufacturer of
+fragrance compounds and perfumes in Rajkot.
+Custom fragrance, private label perfumes, and
+B2B supply since 2020.
+Products
+/products
+Fragrance Compounds,
+Perfumes, Attars & More |
+Breezerland Rajkot
+Explore Breezerland's full range: fragrance
+compounds, spray perfumes, attars, air
+fresheners, household fragrances, essential oils,
+and corporate gifting perfumes.
+Why Us /why-us
+Why Choose Breezerland |
+Reliable Fragrance
+Manufacturer India
+Why brands choose Breezerland: quality
+compounds, custom formulations, B2B pricing,
+and reliable delivery. Fragrance manufacturer in
+Rajkot, Gujarat.
+Process
+/how-we-work
+How We Work | Fragrance
+Manufacturing Process |
+Breezerland
+Breezerland's 5-step process: share requirements
+→ sample → approve → order → delivery. Start
+your custom fragrance order today.
++91-8047672314.
+Testimonials
+/testimonials
+Client Reviews | Breezerland
+Fragrance Manufacturer India
+What clients say about Breezerland — trusted
+fragrance compound supplier with 5-star reviews
+from manufacturers, brand owners, and corporate
+buyers across India.
+Contact /contact
+Contact Breezerland |
++91-8047672314 | Rajkot,
+Gujarat
+Contact Breezerland for bulk fragrance
+compounds, custom perfumes, and private label
+solutions. Call or WhatsApp +91-8047672314.
+Based in Rajkot, Gujarat.
+
+
+--- PAGE 20 ---
+Breezerland · Fragrance Compound Manufacturer & Exporter · Rajkot, Gujarat, India
+Silver Complex, 1st Floor, Shop No-8, Gundala Road, Gondal, Rajkot – 360311
+■ +91-8047672314 · IndiaMart: indiamart.com/breezerland · ExportersIndia:
+ exportersindia.com/breezerland
+ 
+

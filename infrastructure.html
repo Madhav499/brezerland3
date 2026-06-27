@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infrastructure & Production Facility | Breezerland Perfumes</title>
+  <meta name="description" content="Explore Breezerland's manufacturing plant in Rajkot, Gujarat. Equipped with automatic bottling lines, stainless steel maturation curing tanks, and export warehouse facilities." />
+  <meta name="keywords" content="perfume manufacturer Rajkot Gujarat, fragrance exporter Gondal Road Rajkot, bulk perfume order India, perfume brand development India" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js-gsap-pending');</script>
+</head>
+<body class="bg-ivory">
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-panel">
+      <img src="logo1.png" alt="Breezerland logo" class="loader-logo" />
+      <div class="loader-text">Crafting premium fragrance journeys...</div>
+      <div class="particles"> 
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-bar" aria-hidden="true"></div>
+  
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="logo1.png" alt="Breezerland Logo" />
+        <span>Breezerland</span>
+      </a>
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="why-us.html">Why Choose Us</a>
+        <a href="process.html">Process</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-btn active">Capabilities <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="dropdown-content">
+            <a href="infrastructure.html" class="active">Infrastructure</a>
+            <a href="quality-assurance.html">Quality Assurance</a>
+            <a href="private-label.html">Private Label</a>
+            <a href="testimonials.html">Testimonials</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="topbar-actions">
+        <a href="contact.html" class="btn btn-secondary btn-header-cta btn-sm">Request Sample</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in menu -->
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-us.html">Why Choose Us</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+          <li><a href="quality-assurance.html">Quality Assurance</a></li>
+          <li><a href="private-label.html">Private Label</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-ctas">
+          <a class="btn btn-primary" href="contact.html">Request Sample</a>
+          <a class="btn btn-secondary" href="tel:+918047672314">Call Expert</a>
+        </div>
+      </nav>
+    </div>
+    <div class="mobile-menu-backdrop" id="mobileBackdrop" tabindex="-1"></div>
+  </div>
+
+  <main>
+    <!-- CINEMATIC HERO SECTION (Warm Ivory Background) -->
+    <section class="hero" id="infra-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">✦ STATE-OF-THE-ART FACILITY</span>
+          <h1>Our Manufacturing Facility & Infrastructure</h1>
+          <p>Operating from our modern facility in Gondal Road, Rajkot, Gujarat, we maintain advanced industrial blending equipment, automated packing configurations, and rigorous safety controls to support national and global B2B supply chains.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Schedule a Plant Tour</a>
+            <a href="quality-assurance.html" class="btn btn-secondary">Our Quality Standards</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <img src="about_laboratory.png" alt="Breezerland Automatic Bottling" class="hero-img-main" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITY DETAILS SECTION (Alternating layouts, alternating background section tones) -->
+    <section class="bg-white" id="infra-details">
+      <div class="container">
+        
+        <!-- Row 1: Bottling (Image Left, Content Right) -->
+        <div class="alternate-row">
+          <div class="col-image">
+            <div class="image-frame-container" style="aspect-ratio: 4/3;">
+              <img src="cat_spray_perfumes.png" alt="Automatic bottling line" />
+            </div>
+          </div>
+          <div class="col-content">
+            <span class="section-label">AUTOMATION CAPABILITY</span>
+            <h3>High-Speed Bottling Lines</h3>
+            <p>Our production floor features high-efficiency automatic and semi-automatic bottling configurations. From volumetric liquid filling to pneumatic pump crimping, collar attachment, and label applications, we achieve cleanroom bottling tolerances suitable for premium retail brands.</p>
+          </div>
+        </div>
+
+        <!-- Row 2: Aging & Maturation (Content Left, Image Right) -->
+        <div class="alternate-row reverse">
+          <div class="col-image">
+            <div class="image-frame-container" style="aspect-ratio: 4/3;">
+              <img src="cat_raw_compounds.png" alt="Perfume aging tanks" />
+            </div>
+          </div>
+          <div class="col-content">
+            <span class="section-label">SCENT MATURATION</span>
+            <h3>Controlled Maturation Tanks</h3>
+            <p>Maturation is key to perfume depth. We utilize temperature-controlled stainless steel curing tanks where our blends mature for 2 to 4 weeks. This aging process allows top, heart, and base notes to integrate, stabilizing the olfactory profile and enhancing the perfume's skin longevity.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WAREHOUSE & LOGISTICS SECTION (Soft Cream Background) -->
+    <section class="bg-cream">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; margin: 0 auto 50px;">
+          <span class="section-label" style="justify-content: center;">LOGISTICS & RAW MATERIALS</span>
+          <h2>Bulk Warehouse & Export Hub</h2>
+          <p>Structured to support swift domestic transport and international oceanic cargo shipments.</p>
+        </div>
+
+        <div class="facility-grid">
+          <div class="facility-card-list">
+            
+            <div class="facility-card">
+              <div class="facility-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <div class="facility-card-info">
+                <h4>Raw Oils Storage</h4>
+                <p>We source raw essential oils and premium perfume concentrates globally. Our warehouse features specialized climate zoning to prevent oil oxidation and maintain ingredient potency.</p>
+              </div>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="facility-card-info">
+                <h4>Global Export Logistics</h4>
+                <p>Equipped with complete documentation support including Material Safety Data Sheets (MSDS), Certificate of Analysis (COA), and secure sea-freight export palletization for hassle-free custom clearances.</p>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="facility-visual">
+            <div class="image-frame-container" style="aspect-ratio: 4/5;">
+              <img src="about_laboratory.png" alt="Breezerland Export Packaging" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo1.png" alt="Breezerland logo" class="footer-logo" />
+        <p>Creating signature fragrance experiences for brands across India and global markets.</p>
+        <div class="footer-socials">
+          <a href="https://www.indiamart.com/breezerland" target="_blank" rel="noreferrer">IndiaMart</a>
+          <a href="https://www.exportersindia.com/breezerland" target="_blank" rel="noreferrer">ExportersIndia</a>
+        </div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="products.html#fragrance-perfumes">Fragrance Perfumes</a>
+        <a href="products.html#perfumery-compounds">Perfumery Compounds</a>
+        <a href="products.html#specialty-products">Specialty Products</a>
+        <a href="products.html#home-fragrances">Home Fragrances</a>
+        <a href="products.html#household-fragrances">Household Fragrances</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Our Story</a>
+        <a href="why-us.html">Why Choose Us</a>
+        <a href="process.html">Development Process</a>
+        <a href="contact.html">Contact Details</a>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <a href="tel:+918047672314" class="phone-link">+91-8047672314</a>
+        <p class="address-text">Gundala Road, Gondal,<br>Rajkot – 360311,<br>Gujarat, India</p>
+      </div>
+    </div>
+    <div class="footer-note">© 2026 Breezerland. All rights reserved. Designed for Luxury Brand Formulations.</div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

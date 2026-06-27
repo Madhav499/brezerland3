@@ -26,50 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 800);
 
-  // 2. Custom Cursor Follower (For Desktop)
-  const cursor = document.getElementById('customCursor');
-  const follower = document.getElementById('customCursorFollower');
-  
-  if (cursor && follower && window.innerWidth > 1024) {
-    let mouseX = 0, mouseY = 0;
-    let posX = 0, posY = 0;
-    
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      
-      cursor.style.left = mouseX + 'px';
-      cursor.style.top = mouseY + 'px';
-    });
-    
-    // Follower animation loop with slight lag for premium breathing feel
-    function animateFollower() {
-      const dx = mouseX - posX;
-      const dy = mouseY - posY;
-      
-      posX += dx * 0.15;
-      posY += dy * 0.15;
-      
-      follower.style.left = posX + 'px';
-      follower.style.top = posY + 'px';
-      
-      requestAnimationFrame(animateFollower);
-    }
-    animateFollower();
-    
-    // Interactive element hover scale triggers
-    const interactiveElements = document.querySelectorAll('a, button, select, input, textarea, .product-category-card, .feature-card, .industry-card, .testimonial-card, .tab-btn, .factsheet-table td a');
-    interactiveElements.forEach((el) => {
-      el.addEventListener('mouseenter', () => {
-        cursor.classList.add('hovered');
-        follower.classList.add('hovered');
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hovered');
-        follower.classList.remove('hovered');
-      });
-    });
-  }
+  // 2. Custom Cursor Follower (Removed per request)
 
   // 3. Scroll Interactions: Progress bar, Scrolled Header, and Back-to-Top
   window.addEventListener('scroll', () => {

@@ -83,47 +83,10 @@ textarea {
   margin: 0 auto;
 }
 
-/* CUSTOM CURSOR FOLLOWER */
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background: var(--gold-luxury);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s, height 0.2s, background-color 0.2s;
-}
-
+/* CUSTOM CURSOR FOLLOWER (Disabled) */
+.custom-cursor,
 .custom-cursor-follower {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--gold-luxury);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.08s ease-out, width 0.25s, height 0.25s, border-color 0.25s, background-color 0.25s;
-}
-
-/* Hover state classes added by JS */
-.custom-cursor.hovered {
-  width: 12px;
-  height: 12px;
-  background: var(--accent-sage);
-}
-
-.custom-cursor-follower.hovered {
-  width: 48px;
-  height: 48px;
-  border-color: var(--accent-sage);
-  background: rgba(114, 140, 105, 0.05);
+  display: none !important;
 }
 
 /* PAGE LOADER */

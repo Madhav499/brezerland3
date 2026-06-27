@@ -526,7 +526,7 @@
     gsap.set('.hero-glow', { opacity: 0, scale: 0.92 });
     gsap.set('.hero .eyebrow', { opacity: 0, y: getDistance(24) });
     gsap.set('.hero h1 .heading-line-inner', { opacity: 0, y: '110%' });
-    gsap.set('.hero-copy > p', { opacity: 0, y: getDistance(26) });
+    gsap.set('.hero-copy-top > p', { opacity: 0, y: getDistance(26) });
     gsap.set('.hero-actions .btn', { opacity: 0, scale: 0.92 });
     gsap.set('.trust-badges span', { opacity: 0, y: getDistance(16) });
     gsap.set('.hero-image-container', { opacity: 0, scale: 1.05 });
@@ -563,7 +563,7 @@
         ease: 'expo.out',
         stagger: getStagger(0.14)
       }, 0.28)
-      .to('.hero-copy > p', {
+      .to('.hero-copy-top > p', {
         opacity: 1,
         y: 0,
         duration: getDuration(0.95)

@@ -1,0 +1,30 @@
+# Integration Tasks Checklist
+
+- [x] Add Top Info Bar, Navigation, and Floating Widget styles in `styles.css`
+- [x] Add interactive toggle and auto-open timeout behavior in `script.js`
+- [x] Update `index.html` structure
+- [x] Update `about.html` structure
+- [x] Update `products.html` structure
+- [x] Update `process.html` structure
+- [x] Update `why-us.html` structure
+- [x] Update `infrastructure.html` structure
+- [x] Update `quality-assurance.html` structure
+- [x] Update `private-label.html` structure
+- [x] Update `testimonials.html` structure
+- [x] Update `contact.html` structure
+- [x] Implement absolute positioning and object-positioning for hero images
+- [x] Disable container scaling on hover in `styles.css`
+- [x] Define a new centered `.header-container` utility with responsive padding queries
+- [x] Apply `.header-container` to top info bar and primary nav across all 10 HTML files
+- [x] Resize logo image heights: 70px desktop, 60px tablet, 50px mobile
+- [x] Crop bottom 120 pixels off `hero_perfume.png` directly to eliminate baked white table surface
+- [x] Reset `.hero-img-main` layout properties to standard width/height 100% cover
+- [x] Hide top info contact bar on tablet and mobile viewports (<1024px)
+- [x] Restructure `.topbar` container to exactly 72px height on mobile and tablet
+- [x] Absolute center search button (22px SVG) in the middle of navigation bar row
+- [x] Hide standard quote CTA from navigation row and place full-width Gold CTA in drawer
+- [x] Add rounded ends (`border-radius: 2px`) to morphing hamburger lines
+- [x] Restructure mobile slide-in menu content (divider separators, contact blocks, green WhatsApp CTA, social icons)
+- [x] Add scroll threshold (10px scroll threshold on mobile vs 100px on desktop)
+- [x] Verify styling and interaction behaviors with browser agent
+- [x] Compile changes in walkthrough report

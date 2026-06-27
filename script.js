@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     if (topbar) {
-      topbar.classList.toggle('scrolled', scrollTop > 40);
+      const scrollThreshold = window.innerWidth > 1024 ? 100 : 10;
+      topbar.classList.toggle('scrolled', scrollTop > scrollThreshold);
     }
     
     if (backToTop) {
@@ -56,19 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Mobile Navigation Slide Drawer
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      if (mobileMenu) {
-        if (mobileMenu.classList.contains('open')) {
-          closeMobileMenu();
-        } else {
-          openMobileMenu();
-        }
-      }
-    });
-  }
-
+  // 4. Mobile Menu Interactions
   function openMobileMenu() {
     if (!mobileMenu) return;
     mobileMenu.classList.add('open');
@@ -78,11 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
 
-    const items = mobileMenu.querySelectorAll('.mobile-nav a, .mobile-ctas a');
-    items.forEach((it, i) => {
-      it.style.transitionDelay = `${60 + i * 40}ms`;
+    const items = mobileMenu.querySelectorAll('.mobile-menu-links li, .mobile-menu-cta-container, .mobile-contact-item, .mobile-menu-whatsapp-container, .mobile-menu-socials');
+    items.forEach((it, idx) => {
+      it.style.transitionDelay = `${0.05 + idx * 0.03}s`;
       it.style.opacity = '1';
-      it.style.transform = 'none';
+      it.style.transform = 'translateY(0)';
+    });
+  }
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      if (mobileMenu && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
   }
 
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
 
-    const items = mobileMenu.querySelectorAll('.mobile-nav a, .mobile-ctas a');
+    const items = mobileMenu.querySelectorAll('.mobile-menu-links li, .mobile-menu-cta-container, .mobile-contact-item, .mobile-menu-whatsapp-container, .mobile-menu-socials');
     items.forEach((it) => {
       it.style.transitionDelay = '';
       it.style.opacity = '';
@@ -118,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Active Navigation Link Highlighting (Filename-based for Multi-Page)
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.navbar a, .mobile-nav a, .dropdown-content a');
+  const navLinks = document.querySelectorAll('.navbar a, .mobile-menu-links a, .dropdown-content a');
   
   navLinks.forEach((link) => {
     const href = link.getAttribute('href');
@@ -240,5 +239,81 @@ document.addEventListener('DOMContentLoaded', () => {
       // Redirect in new tab
       window.open(whatsappUrl, '_blank');
     });
+  }
+
+  // 9. Search Bar Overlay Toggler
+  const searchTriggers = document.querySelectorAll('.nav-search-btn');
+  const searchOverlay = document.getElementById('searchOverlay');
+  const searchClose = document.getElementById('searchClose');
+
+  if (searchOverlay && searchTriggers.length) {
+    searchTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        searchOverlay.classList.add('active');
+        const input = searchOverlay.querySelector('.search-input');
+        if (input) input.focus();
+      });
+    });
+
+    searchClose?.addEventListener('click', () => {
+      searchOverlay.classList.remove('active');
+    });
+  }
+
+  // 10. Floating Contact Widget Logic
+  const widgetTrigger = document.getElementById('widgetTrigger');
+  const contactPopup = document.getElementById('contactPopup');
+  const popupClose = document.getElementById('popupClose');
+
+  if (widgetTrigger && contactPopup) {
+    widgetTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      contactPopup.classList.toggle('active');
+      const isActive = contactPopup.classList.contains('active');
+      contactPopup.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+    });
+
+    popupClose?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeWidgetPopup();
+    });
+
+    function closeWidgetPopup() {
+      contactPopup.classList.remove('active');
+      contactPopup.setAttribute('aria-hidden', 'true');
+      localStorage.setItem('contact_widget_dismissed', Date.now().toString());
+    }
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (contactPopup.classList.contains('active')) {
+        if (!contactPopup.contains(e.target) && e.target !== widgetTrigger && !widgetTrigger.contains(e.target)) {
+          contactPopup.classList.remove('active');
+          contactPopup.setAttribute('aria-hidden', 'true');
+        }
+      }
+    });
+
+    // Escape Key Closure
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        contactPopup.classList.remove('active');
+        contactPopup.setAttribute('aria-hidden', 'true');
+        if (searchOverlay) searchOverlay.classList.remove('active');
+      }
+    });
+
+    // Auto open after 8 seconds (if not dismissed within 24 hours)
+    const dismissedTime = localStorage.getItem('contact_widget_dismissed');
+    const oneDayMs = 24 * 60 * 60 * 1000;
+    
+    if (!dismissedTime || (Date.now() - parseInt(dismissedTime, 10)) > oneDayMs) {
+      setTimeout(() => {
+        if (!contactPopup.classList.contains('active')) {
+          contactPopup.classList.add('active');
+          contactPopup.setAttribute('aria-hidden', 'false');
+        }
+      }, 8000);
+    }
   }
 });

@@ -26,7 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 800);
 
-  // 2. Custom Cursor Follower (Removed per request)
+  // 2. Video Playback Fallback for Autoplay Restrictions
+  function playVideoOnInteraction() {
+    const video = document.querySelector('.hero-video');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (video && video.paused && !prefersReducedMotion) {
+      video.play().catch(err => console.log("Video playback deferred: ", err));
+    }
+    document.removeEventListener('click', playVideoOnInteraction);
+    document.removeEventListener('touchstart', playVideoOnInteraction);
+  }
+  document.addEventListener('click', playVideoOnInteraction, { passive: true });
+  document.addEventListener('touchstart', playVideoOnInteraction, { passive: true });
 
   // 3. Scroll Interactions: Progress bar, Scrolled Header, and Back-to-Top
   window.addEventListener('scroll', () => {
@@ -231,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // WhatsApp Dynamic URL Construction
       const whatsappText = `Hello Breezerland Perfumes,\n\nI am interested in placing an inquiry for fragrance manufacturing:\n\n*Name:* ${fullName}\n*Company:* ${companyName}\n*Product Interest:* ${productInterest}\n*Quantity:* ${quantity}\n*Phone:* ${phone}\n*Email:* ${email}\n*Requirement:* ${message}\n\nPlease get in touch with me.`;
       
-      const whatsappUrl = `https://wa.me/918047672314?text=${encodeURIComponent(whatsappText)}`;
+      const whatsappUrl = `https://wa.me/918780872023?text=${encodeURIComponent(whatsappText)}`;
       
       // Reset form
       enquiryForm.reset();

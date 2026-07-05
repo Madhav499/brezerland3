@@ -127,14 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 5. Active Navigation Link Highlighting (Filename-based for Multi-Page)
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  let currentLocation = window.location.pathname.replace(/\/$/, '');
+  if (!currentLocation) currentLocation = '/index.html';
   const navLinks = document.querySelectorAll('.navbar a, .mobile-menu-links a, .dropdown-content a');
-  
+
   navLinks.forEach((link) => {
     const href = link.getAttribute('href');
-    if (href === currentPath) {
+    const resolved = new URL(href, window.location.href).pathname.replace(/\/$/, '');
+    if (resolved === currentLocation) {
       link.classList.add('active');
-      // If it is in capabilities dropdown, also highlight parent capabilities button
       const parentDropdown = link.closest('.nav-dropdown');
       if (parentDropdown) {
         const dropdownBtn = parentDropdown.querySelector('.dropdown-btn');

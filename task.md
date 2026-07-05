@@ -1,8 +1,8 @@
 # Integration Tasks Checklist
 
 - [x] Add Top Info Bar, Navigation, and Floating Widget styles in `styles.css`
-- [x] Add interactive toggle and auto-open timeout behavior in `script.js`
-- [x] Update `index.html` structure
+- [x] Compress source video `IMG_3535.MOV` into WebM, MP4, and extract JPEG/WebP poster frames
+- [/] Modify `index.html` structure (add body class, insert video element, remove visual image col, lazy-load fold content)
 - [x] Update `about.html` structure
 - [x] Update `products.html` structure
 - [x] Update `process.html` structure
@@ -28,3 +28,5 @@
 - [x] Add scroll threshold (10px scroll threshold on mobile vs 100px on desktop)
 - [x] Verify styling and interaction behaviors with browser agent
 - [x] Compile changes in walkthrough report
+- [x] Fix critical rendering bug (opacity: 0) on reveal elements across all internal pages
+

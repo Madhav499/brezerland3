@@ -8,3 +8,14 @@ __pycache__/
 .vscode/
 
 .vercel
+
+# Raw video and image sources
+IMG_3535.MOV
+IMG_3536.MOV
+CREATIVE DIRECTOR.png
+IMG_7260.PNG
+soft copy BREEZERLAND.pdf
+Breezerland_Website_Content_Final.docx
+Breezerland_Website_Content_Final.txt
+pdf_content.txt
+*.py

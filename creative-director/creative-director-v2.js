@@ -235,24 +235,8 @@ function initAchievementsOrbit() {
   
   if (!orbitWrapper || !cards.length) return;
 
-  let baseRotation = 0;
-  let isOrbitPaused = false;
-  let targetAngle = 0;
-  let currentAngle = 0;
-  let animId = null;
-
-  // Track hover status on cards to pause rotation
+  // Modal trigger on click
   cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      isOrbitPaused = true;
-      card.style.zIndex = "120";
-    });
-    card.addEventListener('mouseleave', () => {
-      isOrbitPaused = false;
-      card.style.zIndex = "5";
-    });
-
-    // Modal trigger on click
     card.addEventListener('click', () => {
       const achievementId = card.getAttribute('data-id');
       const data = achievementsData.find(d => d.id === achievementId);
@@ -285,94 +269,6 @@ function initAchievementsOrbit() {
       });
     });
   }
-
-  // Position cards in Orbit (Runs on Desktop & Tablet)
-  function updateLayout() {
-    const w = window.innerWidth;
-    if (w < 768) {
-      if (animId) {
-        cancelAnimationFrame(animId);
-        animId = null;
-      }
-      // Remove inline absolute styles so CSS media query classes take full control
-      cards.forEach(card => {
-        card.style.left = '';
-        card.style.top = '';
-        card.style.position = '';
-      });
-      return;
-    }
-
-    if (!animId) {
-      animId = requestAnimationFrame(animateOrbit);
-    }
-    cards.forEach(card => {
-      card.style.position = 'absolute';
-    });
-  }
-
-  // Continuous animation loop for orbiting
-  function animateOrbit(time) {
-    const w = window.innerWidth;
-    if (w < 768) {
-      if (animId) {
-        cancelAnimationFrame(animId);
-        animId = null;
-      }
-      return;
-    }
-
-    const centerX = orbitWrapper.offsetWidth / 2;
-    const centerY = orbitWrapper.offsetHeight / 2;
-    
-    let radiusX, radiusY, orbitCenterY;
-
-    if (w >= 1200) {
-      // Desktop: Symmetrical focal path (kept completely unchanged)
-      radiusX = 560;
-      radiusY = 380;
-      orbitCenterY = centerY - 60;
-    } else {
-      // Tablet: 768px - 1199px
-      // Dynamically adjust radiusX to fit screen width and prevent card clipping
-      radiusX = Math.min(380, (w - 220) / 2);
-      radiusY = 270;
-      orbitCenterY = centerY - 45;
-    }
-
-    // Update rotation angle slowly if not paused
-    if (!isOrbitPaused && !prefersReducedMotion) {
-      baseRotation += 0.0006; // extremely slow orbit
-    }
-
-    cards.forEach((card, idx) => {
-      // Space cards evenly around the ellipse
-      const offsetAngle = (idx / cards.length) * Math.PI * 2;
-      const angle = baseRotation + offsetAngle;
-
-      // Calculate basic elliptical coordinates
-      let x = centerX + radiusX * Math.cos(angle) - card.offsetWidth / 2;
-      let y = orbitCenterY + radiusY * Math.sin(angle) - card.offsetHeight / 2;
-
-      // Add subtle independent vertical float (floating effect in space)
-      if (!isOrbitPaused && !prefersReducedMotion) {
-        const floatTime = time * 0.001;
-        // Float distance: Desktop/Laptop/Tablet = 12px, Mobile = 6px
-        const floatAmp = w < 768 ? 6 : 12;
-        const floatOffset = Math.sin(floatTime + idx) * floatAmp;
-        y += floatOffset;
-      }
-
-      card.style.left = `${x}px`;
-      card.style.top = `${y}px`;
-    });
-
-    animId = requestAnimationFrame(animateOrbit);
-  }
-
-  window.addEventListener('resize', updateLayout);
-  // Run layout placement after small delay to ensure wrapper offsets are correct
-  setTimeout(updateLayout, 100);
 
   // Modal open function
   function openCdModal(data) {

@@ -13,6 +13,9 @@
 - [x] Update `testimonials.html` structure
 - [x] Update `contact.html` structure
 - [x] Implement absolute positioning and object-positioning for hero images
+- [x] Append the featured certificate card styling and glass reflection styles to `styles.css`
+- [x] Update the certifications markup in `index.html` (Categories 1 & 2)
+- [x] Verify responsiveness, click behaviors, animations, and modal loading on the Home Page
 - [x] Disable container scaling on hover in `styles.css`
 - [x] Define a new centered `.header-container` utility with responsive padding queries
 - [x] Apply `.header-container` to top info bar and primary nav across all 10 HTML files

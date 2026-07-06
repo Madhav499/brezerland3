@@ -21,6 +21,11 @@
   
   --radius-cd-card: 16px;
   --radius-cd-btn: 12px;
+
+  /* Symmetrical orbit spacing configurations */
+  --orbit-radius-x: 420px;
+  --orbit-radius-y: 300px;
+  --orbit-offset-y: 20px;
 }
 
 /* Page Loader override for smooth entry */
@@ -241,8 +246,12 @@ body.creative-director-page {
 }
 
 /* Orbit Card Styling */
+/* Orbit Card Styling */
 .orbit-card {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translate(var(--tx), var(--ty));
   width: 220px;
   padding: 16px 20px;
   background: rgba(255, 255, 255, 0.75);
@@ -259,10 +268,45 @@ body.creative-director-page {
               background 0.4s ease;
 }
 
+/* Individual card symmetrical coordinates */
+.orbit-card[data-id="rolling-stone"] {
+  --tx: calc(-0.8 * var(--orbit-radius-x));
+  --ty: calc(-1 * var(--orbit-radius-y) + var(--orbit-offset-y));
+  --float-delay: 0s;
+}
+.orbit-card[data-id="tedx-recognition"] {
+  --tx: calc(-1 * var(--orbit-radius-x));
+  --ty: var(--orbit-offset-y);
+  --float-delay: -1s;
+}
+.orbit-card[data-id="jamsphere"] {
+  --tx: calc(-0.8 * var(--orbit-radius-x));
+  --ty: calc(var(--orbit-radius-y) + var(--orbit-offset-y));
+  --float-delay: -2s;
+}
+.orbit-card[data-id="tuneloud"] {
+  --tx: calc(0.8 * var(--orbit-radius-x));
+  --ty: calc(-1 * var(--orbit-radius-y) + var(--orbit-offset-y));
+  --float-delay: -3s;
+}
+.orbit-card[data-id="music"] {
+  --tx: calc(1 * var(--orbit-radius-x));
+  --ty: var(--orbit-offset-y);
+  --float-delay: -4s;
+}
+.orbit-card[data-id="awards"] {
+  --tx: calc(0.8 * var(--orbit-radius-x));
+  --ty: calc(var(--orbit-radius-y) + var(--orbit-offset-y));
+  --float-delay: -5s;
+}
+
 .orbit-card-inner {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  animation: floatCard 6s ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+  transition: transform 0.3s ease;
 }
 
 .orbit-card-header {
@@ -313,14 +357,27 @@ body.creative-director-page {
 /* Hover elevation state */
 .orbit-card:hover {
   background: var(--cd-white);
-  transform: scale(1.08) translateY(-5px);
+  transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(1.08);
   box-shadow: 0 15px 40px rgba(184, 146, 77, 0.18), 0 5px 15px rgba(0, 0, 0, 0.02);
   border-color: var(--cd-gold-luxury);
-  z-index: 100;
+  z-index: 120;
+}
+
+.orbit-card:hover .orbit-card-inner {
+  transform: translateY(-5px);
 }
 
 .orbit-card:hover .orbit-card-cta svg {
   transform: translateX(4px);
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 /* ==========================================================================
@@ -982,6 +1039,12 @@ body.creative-director-page {
 
 /* Tablet Layout (768px - 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --orbit-radius-x: 320px;
+    --orbit-radius-y: 240px;
+    --orbit-offset-y: 20px;
+  }
+
   .orbit-section {
     padding: 100px 24px 80px 24px;
   }

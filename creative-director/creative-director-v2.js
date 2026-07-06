@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParticles();
   initAchievementsOrbit();
   initPortraitParallax();
-  initRecognitionCarousel();
   initStatsCounter();
   initTimelineMilestones();
   initQuoteReveal();
@@ -176,8 +175,7 @@ const achievementsData = [
     publication: "Rolling Stone India",
     year: "2021",
     description: "Featured in Rolling Stone India's music showcase, highlighting the creative duo Summergold (composed of Parth Patadiya and Harshvardhan Gadhvi) and their debut single 'Off'. The publication celebrated the track's pensive, acoustic folk texture and philosophical lyrics reflecting human vulnerability.",
-    link: "https://rollingstoneindia.com/hear-summergolds-reflective-debut-single-off/",
-    image: "../IMG_7260_opt.webp"
+    link: "https://rollingstoneindia.com/hear-summergolds-reflective-debut-single-off/"
   },
   {
     id: "tedx-recognition",
@@ -185,8 +183,7 @@ const achievementsData = [
     publication: "TEDx Platform",
     year: "2020",
     description: "Honored for creative leadership, visual arts development, and perfume branding direction. Parth's participation on the TEDx stage explored the boundaries of brand storytelling and sensory innovation, translating abstract narrative ideas into concrete luxury fragrance compositions.",
-    link: "../contact.html",
-    image: "../TEDx_opt.webp"
+    link: "../contact.html"
   },
   {
     id: "jamsphere",
@@ -194,8 +191,7 @@ const achievementsData = [
     publication: "JamSphere Magazine",
     year: "2017",
     description: "Featured in JamSphere's independent review list for the film soundtrack of 'A Murder In Me', directed by Parth Patadiya. Composed in partnership with spoken word artist and Nu Jazz producer Han Sino, the soundtrack received high praise for its haunting, dark, and highly emotional scores.",
-    link: "https://jamsphere.com/reviews/han-sino-a-murder-in-me-the-score-is-deliciously-dark-and-hauntingly-poignant",
-    image: "../TEDx_award_opt.webp"
+    link: "https://jamsphere.com/reviews/han-sino-a-murder-in-me-the-score-is-deliciously-dark-and-hauntingly-poignant"
   },
   {
     id: "tuneloud",
@@ -203,8 +199,7 @@ const achievementsData = [
     publication: "TuneLoud Magazine",
     year: "2017",
     description: "Highlighted by TuneLoud for the cinematic design and sonic storytelling behind 'A Murder In Me'. The editorial detail focused on how Parth Patadiya's tense, visual OCD short film direction worked in sync with Han Sino's poignant musical compositions to elevate the sensory atmosphere.",
-    link: "https://jamsphere.com/reviews/han-sino-a-murder-in-me-the-score-is-deliciously-dark-and-hauntingly-poignant",
-    image: "../IMG_7260_opt.webp"
+    link: "https://jamsphere.com/reviews/han-sino-a-murder-in-me-the-score-is-deliciously-dark-and-hauntingly-poignant"
   },
   {
     id: "music",
@@ -212,8 +207,7 @@ const achievementsData = [
     publication: "Bandcamp / Spotify",
     year: "2021",
     description: "Released as a multidisciplinary sensory project. The EP tracks blend acoustic guitar loops, organic ambient noise, and atmospheric layering to translate the olfactory journey of Breezerland perfumes into a coherent auditory format, establishing a template for premium B2B branding.",
-    link: "https://rollingstoneindia.com/rs-daily-music-playlist-november-2020/",
-    image: "../TEDx_stage_opt.webp"
+    link: "https://rollingstoneindia.com/rs-daily-music-playlist-november-2020/"
   },
   {
     id: "awards",
@@ -221,8 +215,7 @@ const achievementsData = [
     publication: "Breezerland Showcase",
     year: "2022",
     description: "Awarded and recognized within the creative industry for pioneering a sensory-first brand strategy. Parth Patadiya's work combines film direction, music composition, and fragrance formulation into a single artistic process, shaping the signature formulations of Breezerland's luxury perfume clients.",
-    link: "../contact.html",
-    image: "../TEDx_stage_opt.webp"
+    link: "../contact.html"
   }
 ];
 
@@ -264,22 +257,18 @@ function initAchievementsOrbit() {
         publication: "Creative Director",
         year: "FOUNDER & BRAND ARCHITECT",
         description: "Parth Patadiya is the creative visionary behind Breezerland's signature olfactory identity. Seamlessly combining his background in film composition, sound engineering, and luxury marketing, he elevates commercial perfume contract manufacturing into a multi-sensory storytelling medium. Under his direction, every fragrance compound is crafted not just as a mixture of aromatic molecules, but as a luxury experience that helps brands establish strong emotional connections with their consumers.",
-        link: "../contact.html",
-        image: "../CREATIVE_DIRECTOR_opt.webp"
+        link: "../contact.html"
       });
     });
   }
 
   // Modal open function
   function openCdModal(data) {
-    const modalImage = document.getElementById('cdModalImg');
     const modalTitle = document.getElementById('cdModalTitle');
     const modalPub = document.getElementById('cdModalPub');
     const modalYear = document.getElementById('cdModalYear');
     const modalDesc = document.getElementById('cdModalDesc');
     const modalBtn = document.getElementById('cdModalBtn');
-
-    if (modalImage) modalImage.src = data.image;
     if (modalTitle) modalTitle.textContent = data.title;
     if (modalPub) modalPub.textContent = data.publication;
     if (modalYear) modalYear.textContent = data.year;
@@ -354,97 +343,6 @@ function initPortraitParallax() {
       });
     }
   });
-}
-
-/* ==========================================================================
-   FEATURED RECOGNITION (TEDx CAROUSEL AND LIGHTBOX BINDING)
-   ========================================================================== */
-function initRecognitionCarousel() {
-  const carousel = document.getElementById('recognitionCarousel');
-  if (!carousel) return;
-
-  const slides = carousel.querySelectorAll('.carousel-slide');
-  const prevBtn = carousel.querySelector('.prev-btn');
-  const nextBtn = carousel.querySelector('.next-btn');
-  
-  if (slides.length < 2) return;
-
-  let activeIndex = 0;
-
-  function updateCarousel() {
-    slides.forEach((slide, idx) => {
-      slide.className = 'carousel-slide'; // reset classes
-      
-      // Calculate relative position index in a loop
-      let diff = idx - activeIndex;
-      
-      // Handle bounds wrap-around for infinite carousel feel
-      if (diff === -1 || (activeIndex === 0 && idx === slides.length - 1)) {
-        slide.classList.add('left-slide');
-      } else if (diff === 1 || (activeIndex === slides.length - 1 && idx === 0)) {
-        slide.classList.add('right-slide');
-      } else if (idx === activeIndex) {
-        slide.classList.add('center-slide');
-      }
-    });
-  }
-
-  // Button clicks
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      activeIndex = (activeIndex - 1 + slides.length) % slides.length;
-      updateCarousel();
-    });
-  }
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      activeIndex = (activeIndex + 1) % slides.length;
-      updateCarousel();
-    });
-  }
-
-  // Slide clicks (clicking a preview slide makes it active, center clicks open lightbox)
-  slides.forEach((slide, idx) => {
-    slide.addEventListener('click', (e) => {
-      if (slide.classList.contains('center-slide')) {
-        // If center slide, extract image and caption details and trigger global openLightbox
-        const img = slide.querySelector('img');
-        const caption = slide.querySelector('.carousel-caption-text')?.textContent || '';
-        if (img && typeof window.openLightbox === 'function') {
-          window.openLightbox(img.getAttribute('src'), caption);
-        }
-      } else {
-        // Focus the clicked slide
-        activeIndex = idx;
-        updateCarousel();
-      }
-    });
-  });
-
-  // Swipe support for touch screens
-  let startX = 0;
-  carousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-  }, { passive: true });
-
-  carousel.addEventListener('touchend', (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
-    
-    if (Math.abs(diff) > 50) { // threshold
-      if (diff > 0) {
-        // swipe left -> next
-        activeIndex = (activeIndex + 1) % slides.length;
-      } else {
-        // swipe right -> prev
-        activeIndex = (activeIndex - 1 + slides.length) % slides.length;
-      }
-      updateCarousel();
-    }
-  }, { passive: true });
-
-  // Initial set
-  updateCarousel();
 }
 
 /* ==========================================================================

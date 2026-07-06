@@ -456,20 +456,7 @@ body.creative-director-page {
   padding: 36px;
 }
 
-.luxury-modal-img-wrapper {
-  width: 100%;
-  height: 280px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 28px;
-  border: 1px solid var(--cd-cream-dark);
-}
 
-.luxury-modal-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .luxury-modal-meta {
   display: flex;
@@ -549,251 +536,39 @@ body.creative-director-page {
 /* ==========================================================================
    FEATURED RECOGNITION (TEDx CAROUSEL)
    ========================================================================== */
-.recognition-section {
-  padding: 120px 24px;
-  background-color: var(--cd-cream-light);
-  border-top: 1px solid rgba(184, 146, 77, 0.12);
-  border-bottom: 1px solid rgba(184, 146, 77, 0.12);
-}
 
-.carousel-viewport {
-  position: relative;
-  max-width: 1000px;
-  margin: 60px auto 0 auto;
-  height: 480px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.carousel-slide {
-  position: absolute;
-  width: 55%;
-  height: 380px;
-  border-radius: var(--radius-cd-card);
-  overflow: hidden;
-  box-shadow: var(--shadow-premium);
-  border: 1px solid var(--cd-gold-champagne);
-  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  cursor: pointer;
-  z-index: 1;
-  opacity: 0;
-  transform: translateX(0) scale(0.75);
-  pointer-events: none;
-}
 
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(20%);
-  transition: filter 0.4s ease, transform 0.4s ease;
-}
 
-.carousel-slide:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.04);
-}
 
 /* Carousel center, left, right configurations */
-.carousel-slide.center-slide {
-  opacity: 1;
-  z-index: 10;
-  transform: translateX(0) scale(1);
-  pointer-events: all;
-}
 
-.carousel-slide.left-slide {
-  opacity: 0.6;
-  z-index: 5;
-  transform: translateX(-40%) scale(0.8);
-  filter: blur(2px);
-  pointer-events: all;
-}
 
-.carousel-slide.right-slide {
-  opacity: 0.6;
-  z-index: 5;
-  transform: translateX(40%) scale(0.8);
-  filter: blur(2px);
-  pointer-events: all;
-}
 
-.carousel-caption-box {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 24px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
-  color: var(--cd-white);
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
-}
 
-.carousel-slide.center-slide:hover .carousel-caption-box {
-  transform: translateY(0);
-}
 
-.carousel-caption-text {
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--cd-white);
-  border: 1px solid var(--cd-gold-luxury);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 20;
-  color: var(--cd-gold-luxury);
-  transition: all 0.3s ease;
-}
 
-.carousel-btn:hover {
-  background: var(--cd-black);
-  color: var(--cd-white);
-  border-color: var(--cd-black);
-}
 
-.carousel-btn.prev-btn {
-  left: 2%;
-}
 
-.carousel-btn.next-btn {
-  right: 2%;
-}
 
 /* ==========================================================================
    PUBLICATIONS CARDS
    ========================================================================== */
-.publications-section {
-  padding: 120px 24px;
-  background-color: var(--cd-white);
-}
 
-.publication-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 36px;
-  margin-top: 60px;
-}
 
-.publication-card {
-  background: var(--cd-cream-light);
-  border-radius: var(--radius-cd-card);
-  border: 1.5px solid var(--cd-cream-dark);
-  overflow: hidden;
-  box-shadow: var(--shadow-premium);
-  display: flex;
-  flex-direction: column;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
 
-.publication-card-img-wrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  background: var(--cd-black);
-}
 
-.publication-card-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.95;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
-}
 
-.publication-card:hover .publication-card-img-wrapper img {
-  transform: scale(1.05);
-  opacity: 1;
-}
 
-.publication-card-body {
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
 
-.publication-card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
 
-.pub-logo-text {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--cd-gold-luxury);
-  font-weight: 700;
-}
 
-.pub-date-text {
-  font-size: 0.75rem;
-  color: var(--cd-charcoal);
-  opacity: 0.5;
-}
 
-.pub-headline {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  margin-bottom: 12px;
-  color: var(--cd-black);
-}
 
-.pub-summary {
-  font-size: 0.85rem;
-  line-height: 1.6;
-  color: var(--cd-charcoal);
-  opacity: 0.85;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
 
-.publication-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 24px;
-  border: 1px solid var(--cd-gold-luxury);
-  background: transparent;
-  color: var(--cd-gold-luxury);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border-radius: var(--radius-cd-btn);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: auto;
-}
 
-.publication-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(184, 146, 77, 0.12);
-  border-color: var(--cd-gold-champagne);
-}
 
-.publication-card:hover .publication-btn {
-  background: var(--cd-gold-luxury);
-  color: var(--cd-white);
-}
 
 /* ==========================================================================
    TIMELINE
@@ -1107,22 +882,9 @@ body.creative-director-page {
     background: transparent;
   }
   
-  .carousel-viewport {
-    height: 400px;
-  }
   
-  .carousel-slide {
-    width: 70%;
-    height: 320px;
-  }
   
-  .carousel-slide.left-slide {
-    transform: translateX(-20%) scale(0.85);
-  }
   
-  .carousel-slide.right-slide {
-    transform: translateX(20%) scale(0.85);
-  }
 }
 
 /* ==========================================================================
@@ -1254,205 +1016,41 @@ body.creative-director-page {
   }
 
   /* Section 2: Achievements Story Section */
-  .mobile-story-section {
-    padding: 80px 20px 120px 20px;
-    background-color: var(--cd-white);
-  }
 
-  .mobile-story-header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
 
   /* Vertical Golden Timeline */
-  .mobile-timeline-container {
-    position: relative;
-    padding: 20px 0;
-  }
 
-  .mobile-timeline-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 1.5px;
-    background: linear-gradient(to bottom, transparent, var(--cd-gold-luxury) 5%, var(--cd-gold-luxury) 95%, transparent);
-    transform: translateX(-50%);
-    z-index: 1;
-  }
 
-  .mobile-timeline-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--cd-gold-luxury);
-    box-shadow: 0 0 10px var(--cd-gold-luxury);
-    margin: 32px auto;
-    position: relative;
-    z-index: 2;
-  }
 
   /* Editorial Story Card */
-  .mobile-story-card {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--cd-gold-champagne);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow-premium);
-    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
-  }
 
-  .mobile-story-card:active {
-    transform: translateY(-6px) !important; /* lift 6px on touch */
-    box-shadow: 0 12px 30px rgba(184, 146, 77, 0.15);
-  }
 
-  .mobile-card-image {
-    width: 100%;
-    height: 170px;
-    overflow: hidden;
-    border-bottom: 1px solid rgba(184, 146, 77, 0.1);
-  }
 
-  .mobile-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-  }
 
-  .mobile-story-card:hover .mobile-card-image img {
-    transform: scale(1.05); /* slow zoom on hover */
-  }
 
-  .mobile-card-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  .mobile-card-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
 
-  .mobile-card-meta .pub-name {
-    color: var(--cd-gold-luxury);
-  }
 
-  .mobile-card-meta .pub-year {
-    color: var(--cd-charcoal);
-    opacity: 0.6;
-  }
 
-  .mobile-card-content h4 {
-    font-size: 1.25rem;
-    line-height: 1.35;
-    color: var(--cd-black);
-    margin: 4px 0;
-  }
 
-  .mobile-card-content p {
-    font-size: 0.85rem;
-    color: var(--cd-charcoal);
-    line-height: 1.55;
-    margin: 0;
-  }
 
   /* Luxury outline button */
-  .mobile-card-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
-    padding: 10px 20px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--cd-gold-luxury);
-    background: transparent;
-    border: 1.5px solid var(--cd-gold-luxury);
-    border-radius: 30px; /* rounded pill */
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-    position: relative;
-    overflow: hidden;
-  }
 
-  .mobile-card-btn:active {
-    background: var(--cd-gold-luxury);
-    color: var(--cd-white);
-  }
 
   /* Scroll Storytelling Initial CSS (Intersection Observer classes) */
-  .mobile-story-card {
-    opacity: 0;
-  }
 
   /* Card 1 & 5: fade up */
-  .mobile-story-card.anim-fade-up {
-    transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  }
 
   /* Card 2: slide from right */
-  .mobile-story-card.anim-slide-right {
-    transform: translateX(50px);
-    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  }
 
   /* Card 3: slide from left */
-  .mobile-story-card.anim-slide-left {
-    transform: translateX(-50px);
-    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  }
 
   /* Card 4: zoom fade */
-  .mobile-story-card.anim-zoom-fade {
-    transform: scale(0.92);
-    filter: blur(4px);
-    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
-  }
 
   /* Card 6: scale */
-  .mobile-story-card.anim-scale {
-    transform: scale(0.95);
-    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  }
 
   /* In-View triggers */
-  .mobile-story-card.in-view {
-    opacity: 1 !important;
-    transform: translate(0) scale(1) !important;
-    filter: blur(0) !important;
-  }
 
-  .mobile-story-disclaimer {
-    font-size: 11px;
-    color: var(--cd-charcoal);
-    opacity: 0.5;
-    text-align: center;
-    max-width: 90%;
-    margin: 80px auto 0 auto;
-    line-height: 1.6;
-    font-family: 'Manrope', sans-serif;
-  }
 
   /* Mobile Quote Section */
   .mobile-quote-section {

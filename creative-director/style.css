@@ -1113,3 +1113,30 @@ body.creative-director-page {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
+
+/* ==========================================================================
+   FEATURED RECOGNITION (TEDx STATIC)
+   ========================================================================== */
+.recognition-section {
+  padding: 100px 24px;
+  background-color: var(--cd-cream-light, #faf9f6);
+  border-top: 1px solid rgba(184, 146, 77, 0.12);
+  border-bottom: 1px solid rgba(184, 146, 77, 0.12);
+}
+
+.static-showcase {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-cd-card, 16px);
+  overflow: hidden;
+  box-shadow: var(--shadow-premium, 0 10px 30px rgba(0,0,0,0.15));
+  border: 1px solid var(--cd-gold-champagne, rgba(184, 146, 77, 0.3));
+}
+
+.static-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

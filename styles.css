@@ -2405,75 +2405,7 @@ p {
   color: #FFFFFF;
 }
 
-/* SEARCH NAVIGATION TRIGGER */
-.nav-search-btn {
-  background: none;
-  border: none;
-  color: var(--text-secondary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s ease;
-  padding: 6px;
-}
 
-.nav-search-btn:hover {
-  color: var(--text-primary);
-}
-
-/* SEARCH OVERLAY */
-.search-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(252, 250, 247, 0.97);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s;
-}
-
-.search-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.search-box {
-  width: min(500px, 90%);
-  text-align: center;
-  position: relative;
-}
-
-.search-input {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid var(--gold-luxury);
-  background: transparent;
-  padding: 16px 0;
-  font-size: 1.5rem;
-  font-family: 'Cormorant Garamond', serif;
-  color: var(--text-primary);
-  outline: none;
-}
-
-.search-close {
-  position: absolute;
-  top: -60px;
-  right: 0;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--text-secondary);
-  transition: color 0.2s ease;
-}
-
-.search-close:hover {
-  color: var(--text-primary);
-}
 
 /* FLOATING CONTACT WIDGET */
 .contact-widget {
@@ -2776,35 +2708,7 @@ p {
     width: auto !important;
   }
 
-  .nav-search-btn {
-    position: relative !important;
-    left: auto !important;
-    top: auto !important;
-    transform: none !important;
-    z-index: 10;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: none;
-    background: transparent;
-    color: var(--text-primary);
-  }
 
-  .nav-search-btn svg {
-    width: 22px !important;
-    height: 22px !important;
-    stroke-width: 1.5;
-    transition: transform 0.3s ease;
-  }
-
-  .nav-search-btn:hover svg {
-    transform: scale(1.1);
-    color: var(--gold-luxury);
-  }
 
   .btn-quote {
     display: none !important;

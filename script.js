@@ -253,24 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 9. Search Bar Overlay Toggler
-  const searchTriggers = document.querySelectorAll('.nav-search-btn');
-  const searchOverlay = document.getElementById('searchOverlay');
-  const searchClose = document.getElementById('searchClose');
-
-  if (searchOverlay && searchTriggers.length) {
-    searchTriggers.forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        searchOverlay.classList.add('active');
-        const input = searchOverlay.querySelector('.search-input');
-        if (input) input.focus();
-      });
-    });
-
-    searchClose?.addEventListener('click', () => {
-      searchOverlay.classList.remove('active');
-    });
-  }
 
   // 10. Floating Contact Widget Logic
   const widgetTrigger = document.getElementById('widgetTrigger');
@@ -311,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape') {
         contactPopup.classList.remove('active');
         contactPopup.setAttribute('aria-hidden', 'true');
-        if (searchOverlay) searchOverlay.classList.remove('active');
+
       }
     });
 

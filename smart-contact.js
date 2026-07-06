@@ -308,8 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. GLOBAL INTERCEPTOR
   document.addEventListener('submit', (e) => {
     const form = e.target;
-    // Exclude header search elements
-    if (form.classList.contains('search-box') || form.id === 'searchOverlay') return;
+
 
     e.preventDefault();
 
